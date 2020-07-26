@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.Main {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Avenir Next Cyr";
+  font-size: 14px;
+  background-color: #0db3e8;
+  padding: 44px;
+}
+.logo {
+  font-size: 50px;
+  color: white;
+  padding-left: 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+.logo:active {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.description {
+  color: white;
+  font-size: 44px;
+  line-height: 120%;
+  text-align: center;
+}
+.description-2 {
+  font-size: 28px;
+  line-height: 120%;
+  color: white;
+}
+.buildings {
+  background-image: url("newbuilding.svg");
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: contain;
+}
+.target {
+  background-image: url("target.svg");
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: contain;
+}
+.sale {
+  background-image: url("sale.svg");
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: contain;
+}
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 24px;
+}
+.icon1,
+.icon2,
+.icon3 {
+  color: white;
+  line-height: 120%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.underline {
+  text-decoration: underline;
+}
+.button {
+  background: #ff7f32;
+  display: inline-block;
+  padding: 36px 44px;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 44px;
+  cursor: pointer;
+}
+.question {
+  font-size: 48px;
+  font-weight: 600;
+  color: #595959;
+  background: #ffffff;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  text-align: center;
+  padding: 22px;
+  width: 99.9%;
+  /* border: 2px solid #0db3e8; */
+}
+.answer {
+  width: 49.72%;
+  background: #e5e5e5;
+  height: 110px;
+  cursor: pointer;
+  color: #595959;
+  font-size: 34px;
+  padding-left: 28px;
+  margin-top: 5px;
+
+  /* border: 2px solid #0db3e8; */
+}
+.answer:not(:nth-child(2n)) {
+  margin-right: 5px;
+}
+.folder {
+  padding: 0 120px;
+  margin-top: 30px;
+  /* display: none; */
+}
+.answers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer {
+  background: #b11414;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  text-align: center;
+  padding: 22px;
+  font-size: 0px;
+  width: 99.9%;
+  margin-top: 5px;
+  display: block;
+}
+.button_prev {
+  background: rgba(13, 179, 232, 0.3);
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #fff;
+  vertical-align: middle;
+  width: 340px;
+  box-sizing: border-box;
+  padding: 12px 24px;
+}
+.info {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #aaaaaa;
+  margin: 0 80px;
+}
+.button_next {
+  background: #ff7f32;
+  display: inline-block;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #fff;
+  vertical-align: middle;
+  width: 340px;
+  box-sizing: border-box;
+  padding: 12px 24px;
+}
+.page_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 120px;
+  margin-top: 20px;
+}
+
+.description-2,
+.icons,
+.button {
+  margin-top: 40px;
+}
+.Wait {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* justify-content: center;
+  height: auto;
+  align-content: center; */
+}
+
+.search {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.Title {
+  font-size: 56px;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  color: white;
+}
+.subTitle {
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  margin-bottom: 80px;
+  color: white;
+}
+.phone_mask {
+  font-family: "Avenir Next Cyr";
+  font-size: 40px;
+  width: 800px;
+  padding: 12px 0;
+  text-align: center;
+  color: #717171;
+  font-weight: 500;
+}
+.Field {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Form {
+  margin-bottom: 34px;
+}
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 0 0 28px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.name {
+  text-decoration: none;
+  color: #fff;
+}
+.bottom {
+  background: #ff7f32;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 44px;
+  cursor: pointer;
+  height: 40px;
+}
+.Bott {
+  display: flex;
+  justify-content: center;
+}
+.Agreement {
+  display: flex;
+  justify-content: center;
+}
+.custom-checkbox {
+  display: flex;
+  /* align-content: center; */
+  line-height: 10px;
+}
+/* .agreement {
+  align-self: center;
+} */
+.ans {
+  visibility: hidden;
+}
